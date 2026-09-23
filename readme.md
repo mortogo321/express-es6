@@ -24,38 +24,36 @@ A minimal Express API skeleton written with modern ES6 module syntax (`import`/`
 
 ## Quickstart
 
-Install dependencies (both `yarn.lock` and `bun.lock` are present in the repo, so either Yarn or Bun works; npm is also fine):
+Install dependencies with Bun (`bun.lock` is the single source of truth):
 
 ```bash
-yarn install
-# or
 bun install
 ```
 
 Run in development mode (starts the server directly from `src` via `babel-node`):
 
 ```bash
-npm run dev
+bun run dev
 ```
 
 Run with auto-reload on file changes:
 
 ```bash
-npm run watch
+bun run watch
 ```
 
 Build and run a production bundle (cleans `dist`, transpiles `src` to `dist`, then runs the compiled server):
 
 ```bash
-npm run prod
+bun run prod
 ```
 
 Other available scripts:
 
 ```bash
-npm run build   # transpile src -> dist with Babel
-npm run clean   # remove the dist directory
-npm run server  # run the server from src via babel-node (no NODE_ENV/DEBUG set)
+bun run build   # transpile src -> dist with Babel
+bun run clean   # remove the dist directory
+bun run server  # run the server from src via babel-node (no NODE_ENV/DEBUG set)
 ```
 
 The server listens on the port from the `PORT` environment variable, defaulting to `3000`.
